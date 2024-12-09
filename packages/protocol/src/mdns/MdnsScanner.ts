@@ -903,7 +903,7 @@ export class MdnsScanner implements Scanner {
                 queryMissingDataForInstances.add(name);
 
                 logger.debug(
-                    `Found commissionable device ${name} with data:`,
+                    `Found commissionable device ${name} (interface ${netInterface}, ttl=${ttl}) with data:`,
                     MdnsScanner.discoveryDataDiagnostics(parsedRecord),
                 );
             } else {
